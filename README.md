@@ -1,16 +1,20 @@
-### Hi there 👋
+### Merhaba 👋
 
-<!--
-**anilkarasah/AnilKarasah** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+My name is Anıl Karaşah.
 
-Here are some ideas to get you started:
+📌 I'm studying Computer Engineering at Yıldız Technical University.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🔭 What I currently use:
+- C
+- HTML / CSS / JS
+
+🌱 What I've been working on:
+- Java
+- NodeJS
+
+⚡ What I used before:
+- C# for ASP.NET and MVC architecture
+- MSSQL
+	
+📫 Instagram: [@karinrasah](https://www.instagram.com/karinrasah/)
+

@@ -1,0 +1,13 @@
+BLM1012,Yapisal Programlamaya Giris,6,120
+BLM1022,Sayisal Analiz,3,80
+BLM1032,Devre Teorisi,5,40
+BLM1992,Is Sagligi ve Guvenligi,2,200
+BLM3110,Bilgisayar Muhendisliginde Ozel Konular,5,15
+BLM3120,Bilgiye Erisim Ve Arama Motorlari,3,15
+BLM3130,Oyun Gelistirmeye Giris,4,15
+BLM3520,Mobil Programlamaya Giris,5,15
+BLM3580,Sistem Programlama,3,25
+BLM4780,Veri Tabani Sistemlerinde Guncel Konular,5,15
+FIZ1951,Muhendisler icin Yariiletken Fizigi,5,120
+MAT1072,Matematik,6,100
+MDB1032,Ileri Ingilizce,3,100
