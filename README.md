@@ -8,7 +8,7 @@ My name is Anıl Karaşah.
 - C
 - HTML / CSS / JS
 
-🌱 What I've been working on:
+🌱 What I've been studying on:
 - Java
 - NodeJS
 
