@@ -11,36 +11,46 @@ typedef struct node
 } node;
 
 typedef node *list;
+list head = NULL;
 
-void newNode(list *head, int value)
+void newNode(int value)
 {
-    list newNode = (list)malloc(sizeof(node));
+    list element = (list) malloc(sizeof(node));
+    
+    if (head == NULL) {
+        head = element;
+        head->value = value;
+        head->prev = head->next = NULL;
+        return;
+    }
 
-    newNode->value = value;
-    newNode->next = *head;
-    newNode->prev = NULL;
-    *head = newNode;
+    element->value = value;
+    element->next = head;
+    element->prev = NULL;
+    head->prev = element;
+    head = element;
 }
 
-list findNode(list head, int value)
+list findNode(int value)
 {
-    while (head != NULL)
+    list tmp = head;
+    while (tmp != NULL)
     {
-        if (head->value == value)
-            return head;
-        head = head->next;
+        if (tmp->value == value)
+            return tmp;
+        tmp = tmp->next;
     }
     return NULL;
 }
 
-void removeNode(list *head, int value)
+void removeNode(int value)
 {
-    list tmp = *head;
+    list tmp = head;
     list toDelete;
 
-    if ((*head)->value == value)
+    if (head->value == value)
     {
-        *head = (*head)->next;
+        head = head->next;
         free(tmp);
         return;
     }
@@ -59,39 +69,45 @@ void removeNode(list *head, int value)
     free(toDelete);
 }
 
-void traverseList(list head)
+void traverseList()
 {
     int menu;
+    list tmp = head;
     do
     {
-        printf("Current element: %d\nEnter 1 for next.\n", head->value);
-        if (head->prev != NULL)
+        printf("Current element: %d\n", tmp->value);
+        
+        if (tmp->next != NULL)
+            printf("Enter 1 for next.\n");
+        
+        if (tmp->prev != NULL)
             printf("Enter 2 for previous.\n");
 
         printf("> ");
         scanf("%d", &menu);
 
         if (menu == 1)
-            head = head->next;
+            tmp = tmp->next;
         if (menu == 2)
-            head = head->prev;
-    } while ((menu == 1 || menu == 2) && head != NULL);
+            tmp = tmp->prev;
+    } while ((menu == 1 || menu == 2) && tmp != NULL);
 
-    printf("End of list!\n");
+    printf("End of list!\n\n");
 }
 
-void printList(list head)
+void printList()
 {
+    list tmp = head;
     printf("[");
-    while (head != NULL)
+    while (tmp != NULL)
     {
-        printf("%d, ", head->value);
-        head = head->next;
+        printf("%d, ", tmp->value);
+        tmp = tmp->next;
     }
     printf("]\n");
 }
 
-void freeList(list head)
+void freeList()
 {
     list tmp;
     while (tmp != NULL)
@@ -107,15 +123,14 @@ int main()
 {
     int menu;
     int userInput;
-    list head = NULL;
     list temp;
 
-    newNode(&head, 5);
-    newNode(&head, 17);
-    newNode(&head, 22);
-    newNode(&head, 13);
-    newNode(&head, -17);
-    newNode(&head, 6);
+    newNode(5);
+    newNode(17);
+    newNode(22);
+    newNode(13);
+    newNode(-17);
+    newNode(6);
 
     do
     {
@@ -132,12 +147,12 @@ int main()
         case 1:
             printf("Enter value: ");
             scanf("%d", &userInput);
-            newNode(&head, userInput);
+            newNode(userInput);
             break;
         case 2:
             printf("Enter value: ");
             scanf("%d", &userInput);
-            temp = findNode(head, userInput);
+            temp = findNode(userInput);
             if (temp != NULL)
                 printf("Element exists on the list!\n");
             else
@@ -146,18 +161,18 @@ int main()
         case 3:
             printf("Enter value: ");
             scanf("%d", &userInput);
-            removeNode(&head, userInput);
+            removeNode(userInput);
             break;
         case 4:
-            traverseList(head);
+            traverseList();
             break;
         case 5:
-            printList(head);
+            printList();
             break;
         }
     } while (menu >= 1 && menu <= 5);
 
-    freeList(head);
+    freeList();
 
     return 0;
 }
