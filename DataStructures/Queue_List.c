@@ -1,14 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 20
+typedef struct node
+{
+    int value;
+    struct node *next;
+} node;
 
 typedef struct
 {
-    int front;
-    int rear;
-    int arr[MAX];
-} QUEUE;
+    node *front;
+    node *rear;
+} queue;
 
 typedef struct
 {
@@ -16,14 +19,14 @@ typedef struct
     short errorFlag;
 } result;
 
-QUEUE q;
+queue q;
 
 void initQueue();
 int isEmpty();
-int isFull();
 int enqueue(int value);
 result dequeue();
 result peek();
+void freeList();
 
 int main()
 {
@@ -53,7 +56,7 @@ int main()
             errorFlag = enqueue(value);
 
             if (errorFlag)
-                printf("\n\t!!! Can't add item because queue is full !!!\n");
+                printf("\n\t!!! Can't add item because memory allocation failed !!!\n");
             else
                 printf("\n\tAdded element.\n");
 
@@ -78,57 +81,59 @@ int main()
             break;
         }
     } while (menuSelector > 0 && menuSelector <= 3);
+
+    freeList();
+
     return 0;
 }
 
 void initQueue()
 {
-    q.front = q.rear = -1;
+    q.front = q.rear = NULL;
 }
 
 int isEmpty()
 {
-    if (q.front == -1)
-        return 1;
-
-    return 0;
-}
-
-int isFull()
-{
-    if (q.front == q.rear + 1 || (!q.front && q.rear == MAX - 1))
-        return 1;
-
-    return 0;
+    return (q.front == NULL);
 }
 
 int enqueue(int value)
 {
-    if (isFull())
+    node *temp = (node *)malloc(sizeof(node));
+    if (temp == NULL)
         return 1;
 
-    if (q.front == -1)
-        q.front = 0;
+    if (isEmpty())
+    {
+        q.front = q.rear = temp;
+        q.front->value = value;
+        q.front->next = NULL;
+        return 0;
+    }
 
-    q.rear = (q.rear + 1) % MAX;
-    q.arr[q.rear] = value;
-
+    q.rear->next = temp;
+    q.rear = temp;
+    q.rear->value = value;
+    q.rear->next = NULL;
     return 0;
 }
 
 result dequeue()
 {
+    node *temp;
     result res;
 
-    if (isEmpty())
+    if (q.front == NULL)
+    {
         res.errorFlag = 1;
+    }
     else
     {
         res.errorFlag = 0;
-        res.value = q.arr[q.front];
-        if (q.front == q.rear)
-            q.front = q.rear = -1;
-        q.front = (q.front + 1) % MAX;
+        res.value = q.front->value;
+        temp = q.front;
+        q.front = q.front->next;
+        free(temp);
     }
 
     return res;
@@ -143,8 +148,19 @@ result peek()
     else
     {
         res.errorFlag = 0;
-        res.value = q.arr[q.front];
+        res.value = q.front->value;
     }
-
     return res;
+}
+
+void freeList()
+{
+    node *nextNode = q.front;
+    while (nextNode != NULL)
+    {
+        nextNode = q.front->next;
+        free(q.front);
+        q.front = nextNode;
+    }
+    printf("List cleared from the memory!\n");
 }
