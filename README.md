@@ -8,9 +8,10 @@ My name is Anıl Karaşah.
 - C
 - HTML / CSS / JS
 
-🌱 What I've been studying on:
+🌱 What I'm currently studying on:
 - Java
-- NodeJS
+- NodeJS with Express
+- MongoDB
 
 ⚡ What I used before:
 - C# for ASP.NET and MVC architecture
