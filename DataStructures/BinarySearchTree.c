@@ -11,7 +11,7 @@ typedef struct treenode
 tree *root = NULL;
 
 tree *initNode(int value);
-void addNode(int value);
+tree *addNode(tree *node, int value);
 tree *findNode(tree *node, int value);
 void printInorder(tree *node);
 
@@ -21,13 +21,13 @@ int main()
     int value;
     tree *node;
 
-    addNode(10);
-    addNode(12);
-    addNode(17);
-    addNode(3);
-    addNode(20);
-    addNode(18);
-    addNode(25);
+    addNode(root, 10);
+    addNode(root, 12);
+    addNode(root, 17);
+    addNode(root, 3);
+    addNode(root, 20);
+    addNode(root, 18);
+    addNode(root, 25);
 
     printf("Binary Search Tree Implementation\n");
     do
@@ -46,7 +46,7 @@ int main()
             printf("\n\t> Enter value: ");
             scanf("%d", &value);
 
-            addNode(value);
+            addNode(root, value);
 
             break;
         case 2:
@@ -79,26 +79,35 @@ tree *initNode(int value)
     return node;
 }
 
-void addNode(int value)
+tree *addNode(tree *node, int value)
 {
-    tree *node = findNode(root, value);
-    tree *temp = initNode(value);
+    // tree *node = findNode(root, value);
+    // tree *temp = initNode(value);
 
+    // if (node == NULL)
+    // {
+    //     // Then, the tree is not initialized yet
+    //     // So, we must allocate the root node
+    //     root = temp;
+    //     return;
+    // }
+
+    // if (node->value <= value)
+    // {
+    //     node->right = temp;
+    //     return;
+    // }
+    // else
+    //     node->left = temp;
     if (node == NULL)
-    {
-        // Then, the tree is not initialized yet
-        // So, we must allocate the root node
-        root = temp;
-        return;
-    }
+        return initNode(value);
 
-    if (node->value <= value)
-    {
-        node->right = temp;
-        return;
-    }
-    else
-        node->left = temp;
+    if (value > node->value)
+        node->left = addNode(node->left, value);
+    else if (value > node->value)
+        node->right = addNode(node->right, value);
+
+    return node;
 }
 
 tree *findNode(tree *currNode, int value)
