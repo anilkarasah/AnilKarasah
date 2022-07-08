@@ -17,5 +17,5 @@ My name is Anıl Karaşah.
 - C# for ASP.NET and MVC architecture
 - MSSQL
 	
-📫 Instagram: [@karinrasah](https://www.instagram.com/karinrasah/)
+📫  [LinkedIn](https://www.linkedin.com/in/anilkarasah/)
 
