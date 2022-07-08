@@ -9,13 +9,15 @@ My name is Anıl Karaşah.
 - HTML / CSS / JS
 
 🌱 What I'm currently studying on:
+- C#
+- .NET Core
+- Entity Framework
+- MSSQL
+
+⚡ What I used before:
 - Java
 - NodeJS with Express
 - MongoDB
-
-⚡ What I used before:
-- C# for ASP.NET and MVC architecture
-- MSSQL
 	
 📫  [LinkedIn](https://www.linkedin.com/in/anilkarasah/)
 
