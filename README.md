@@ -4,7 +4,7 @@ My name is Anıl Karaşah.
 
 📌 I'm studying Computer Engineering at Yıldız Technical University.
 
-🔭 What I currently use:
+⚡ What I currently use:
 - C
 - HTML / CSS / JS
 
@@ -14,7 +14,7 @@ My name is Anıl Karaşah.
 - Entity Framework
 - MSSQL
 
-⚡ What I used before:
+🔭 What I used before:
 - Java
 - NodeJS with Express
 - MongoDB
