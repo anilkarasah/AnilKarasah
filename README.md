@@ -6,13 +6,12 @@ My name is Anıl Karaşah.
 
 ⚡ What I currently use:
 - C
+- C# && .NET
+- PostgreSQL
 - HTML / CSS / JS
 
 🌱 What I'm currently studying on:
-- C#
-- .NET Core
-- Entity Framework
-- MSSQL
+- Prolog
 
 🔭 What I used before:
 - Java
