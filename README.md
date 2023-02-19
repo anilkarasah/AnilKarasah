@@ -10,13 +10,11 @@ My name is Anıl Karaşah.
 - PostgreSQL
 - HTML / CSS / JS
 
-🌱 What I'm currently studying on:
-- Prolog
-
 🔭 What I used before:
 - Java
 - NodeJS with Express
 - MongoDB
 - .NET MVC
+- Prolog
 	
 📫  [LinkedIn](https://www.linkedin.com/in/anilkarasah/)
