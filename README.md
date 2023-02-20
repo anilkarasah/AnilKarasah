@@ -1,4 +1,4 @@
-### Merhaba 👋
+# Merhaba 👋
 
 My name is Anıl Karaşah.
 
@@ -6,7 +6,7 @@ My name is Anıl Karaşah.
 
 ⚡ What I currently use:
 - C
-- C# && .NET
+- C# with .NET
 - PostgreSQL
 - HTML / CSS / JS
 
