@@ -1,21 +1,28 @@
 # Merhaba 👋
 
-My name is Anıl Karaşah.
+I am [Anıl Karaşah](https://www.anilkarasah.com/).
 
-📌 I'm studying Computer Engineering at Yıldız Technical University.
+🎓 Computer Engineering student at [Yıldız Technical University](https://yildiz.edu.tr/)
 
-⚡ What I currently use:
+## ⚡ What I currently use:
 - C# / .NET Core
 - PostgreSQL
-- PHP
 - HTML / CSS / JS
 
-🔭 What I used before:
+## 🔭 What I used before:
 - C
+- PHP
 - Angular / Astro
 - Java
 - MongoDB
 - .NET MVC
 - Prolog
-	
-📫  [LinkedIn](https://www.linkedin.com/in/anilkarasah/)
+
+## ⚙️ And other technologies:
+- Redis
+- RabbitMQ
+- Elasticsearch
+
+🌐 [My Portfolio](https://www.anilkarasah.com/)
+
+📫 [LinkedIn](https://www.linkedin.com/in/anilkarasah/)
