@@ -8,20 +8,19 @@ I am [Anıl Karaşah](https://www.anilkarasah.com/).
 - C# / .NET Core
 - PostgreSQL
 - HTML / CSS / JS
+- Docker
+- Redis
+- RabbitMQ
+- Elasticsearch
 
 ## 🔭 What I used before:
 - C
 - PHP
 - Angular / Astro
-- Java
+- Java & Spring Boot
 - MongoDB
 - .NET MVC
 - Prolog
-
-## ⚙️ And other technologies:
-- Redis
-- RabbitMQ
-- Elasticsearch
 
 🌐 [My Portfolio](https://www.anilkarasah.com/)
 
