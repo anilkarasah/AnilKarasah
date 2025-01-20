@@ -2,7 +2,7 @@
 
 My full name is Mehmet Anıl Karaşah.
 
-I work as Full-stack Software Engineer at T&G Workshop, which develops Lidia Commerce Engine. I work on integrating and sustaining product informations to Lidia from out-sources.
+I work as a Full-Stack Software Development Engineer at T&G Workshop, which develops Lidia Commerce Engine. I work on integrating and sustaining product informations to Lidia from out-sources.
 
 🎓 Computer Engineering graduate from [Yıldız Technical University](https://yildiz.edu.tr/)
 
