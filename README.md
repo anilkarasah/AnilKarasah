@@ -1,25 +1,28 @@
 # Merhaba 👋
 
-I am [Anıl Karaşah](https://www.anilkarasah.com/).
+I am [Anıl Karaşah](https://www.anilkarasah.com/). I work as Full-stack Software Engineer at T&G Workshop, which develops Lidia Commerce Engine. I work on integrating and sustaining product informations to Lidia from out-sources.
 
-🎓 Computer Engineering student at [Yıldız Technical University](https://yildiz.edu.tr/)
+🎓 Computer Engineering graduate from [Yıldız Technical University](https://yildiz.edu.tr/)
 
-## ⚡ What I currently use:
-- C# / .NET Core
+## ⚡ Hands-on Experience
+- C# / .NET Core / .NET Framework
 - PostgreSQL
-- HTML / CSS / JS
 - Docker
 - Redis
 - RabbitMQ
 - Elasticsearch
+- JS / Node.js
+- HTML / CSS
 
-## 🔭 What I used before:
+## 🛠️ Used A Lot
 - C
+- Java
+
+## 🔭 Have Familiarity
 - PHP
 - Angular / Astro
-- Java & Spring Boot
+- Spring Boot
 - MongoDB
-- .NET MVC
 - Prolog
 
 🌐 [My Portfolio](https://www.anilkarasah.com/)
